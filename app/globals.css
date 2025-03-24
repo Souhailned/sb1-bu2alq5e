@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 33% 23%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 33% 23%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 33% 23%;
+    --primary: 215 55% 23%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 215 33% 23%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 25% 45%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 215 33% 23%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 215 55% 23%;
+    --chart-1: 215 55% 23%;
+    --chart-2: 220 14% 96%;
+    --chart-3: 211 39% 56%;
+    --chart-4: 215 25% 45%;
+    --chart-5: 220 9% 87%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 215 33% 9%;
+    --foreground: 210 20% 98%;
+    --card: 215 33% 9%;
+    --card-foreground: 210 20% 98%;
+    --popover: 215 33% 9%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 215 33% 9%;
+    --secondary: 215 33% 14.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 33% 14.9%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 215 33% 14.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 33% 14.9%;
+    --input: 215 33% 14.9%;
+    --ring: 210 20% 98%;
+    --chart-1: 210 20% 98%;
+    --chart-2: 215 33% 14.9%;
+    --chart-3: 211 39% 56%;
+    --chart-4: 215 20% 65%;
+    --chart-5: 215 33% 24%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.hero-section {
+  background-image: linear-gradient(to bottom, rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.6)), 
+    url('https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.services-section {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+    url('https://images.unsplash.com/photo-1470755008296-2939845e2059?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+}
