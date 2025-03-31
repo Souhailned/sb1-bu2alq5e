@@ -10,7 +10,8 @@
 
 # next.js
 /.next/
-
+# Ensure out directory is not ignored
+# /out/
 
 # production
 /build
