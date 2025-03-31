@@ -9,10 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Base path for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '/sb1-bu2alq5e' : '',
-  // Asset prefix for GitHub Pages
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/sb1-bu2alq5e' : '',
 }
 
 module.exports = nextConfig
