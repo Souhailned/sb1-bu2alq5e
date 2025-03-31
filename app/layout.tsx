@@ -7,8 +7,13 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'CHZ-dienstverlening | Specialist in Spoorwegbewaking',
-  description: 'Charafi Dienstverlening: Professionele spoorwegveiligheidswacht voor bewaking tijdens onderhoudswerkzaamheden. Specialist in het waarborgen van veiligheid op en rond het spoor.',
+  title: 'CHZ-Dienstverlening',
+  description: 'Uw betrouwbare partner voor professionele spoorwegbewaking',
+  metadataBase: new URL(
+    process.env.NODE_ENV === 'production'
+      ? 'https://souhailned.github.io/sb1-bu2alq5e'
+      : 'http://localhost:3000'
+  ),
   keywords: 'spoorwegveiligheid, veiligheidswacht, spoorwegbewaking, onderhoudswerkzaamheden, CHZ-dienstverlening, Charafi Dienstverlening',
 };
 

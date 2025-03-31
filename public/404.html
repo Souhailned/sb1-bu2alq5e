@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Handle redirects for GitHub Pages with custom domain
+    (function() {
+      var path = window.location.pathname;
+      var host = window.location.host;
+      
+      // Check if we're on the custom domain
+      if (host.includes('chzdienstverlening.nl')) {
+        // If it's not the homepage, redirect to the GitHub Pages URL
+        if (path !== '/' && !path.endsWith('.html')) {
+          window.location.href = 'https://souhailned.github.io/sb1-bu2alq5e' + path;
+        }
+      } else {
+        // Handle GitHub Pages subdirectory routing
+        var ghPagesBase = '/sb1-bu2alq5e';
+        var isGHPages = location.hostname === 'souhailned.github.io';
+        var pathSegments = path.split('/');
+        
+        // If we're at the root of the gh-pages site, redirect to the actual app
+        if (isGHPages && (path === '/' || path === ghPagesBase || path === ghPagesBase + '/')) {
+          window.location.href = ghPagesBase + '/';
+        }
+        // If we're on a subpath on gh-pages, ensure proper routing
+        else if (isGHPages && !path.startsWith(ghPagesBase)) {
+          window.location.href = ghPagesBase + path;
+        }
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, follow this <a href="/">link</a>.</p>
+</body>
+</html> 
