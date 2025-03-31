@@ -31,7 +31,7 @@ export default function Home() {
   const steps = [
     {
       title: "Telefonisch Contact",
-      description: "Direct persoonlijk contact voor snelle service",
+      description: "Direct persoonlijk contact voor snelle service!",
       icon: Phone,
       content: (
         <div className="space-y-6">
