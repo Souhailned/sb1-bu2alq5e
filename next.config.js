@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  
+  // Conditional base path based on hostname
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig
